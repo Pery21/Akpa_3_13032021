@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    scroll-behavior: smooth;
+}
+.header {
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    z-index: 1000;
+    position: relative;
+}
+.header--backArrow {
+    position: relative;
+}
+.header__container {display: block;}
+.header__icone {
+    position: absolute;
+    left: 5rem;
+    height: 5rem;
+    width: 5rem;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #000;
+}
+.header__logo {
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+}
+.header__image {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+.menu {
+    margin-top: -4rem;
+    border-radius: 5rem 5rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+}
+.menu__header {
+    padding: 1rem 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__title {
+    font-family: Shrikhand,"cursive";
+    font-size: 80px;
+}
+.sous-menus {
+    display: grid;
+}
+.sous-menu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    display: block;
+}
+.sous-menu__title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: .5rem;
+    font-size: 50px;
+}
+.sous-menu__title:after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.menuItem {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+}
+.delay-0 {animation-delay: 0s;}
+.delay-1 {animation-delay: .1s;}
+.delay-2 {animation-delay: .2s;}
+.delay-3 {animation-delay: .3s;}
+.delay-4 {animation-delay: .4s;}
+.delay-5 {animation-delay: .5s;}
+.menuItem__header, .menuItem__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.menuItem__title {font-size: 40px; font-weight: bold; margin-bottom: 1200px}
+.menuItem__description {font-size: 35px}
+.menuItem__header {flex: 1;}
+.menuItem__prix {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: .5rem;
+    font-size: 35px;
+    font-weight: bold;
+}
+.menuItem:hover .menuItem__confirmation {margin-right: -1rem;}
+.menuItem__confirmation {
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+}
+.menuItem:hover .menuItem__wrapIcon {
+    transform: rotate(0);
+}
+.menuItem__wrapIcon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
+}
+.menuItem__icone {color: #99e2d0;}
+.btnCommander {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.btnCmd {
+    border: 0;
+    padding: .75rem 1.5rem;
+    font-weight: 500;
+    font-size: 50px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+.footer {
+    display: block;
+    background-color: #353535;
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+.container__logo {
+    color: #fff;
+    font-family: Shrikhand,"cursive";
+    font-size: 40px;
+    margin: 0 0 16px;
+}
+.container__element {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.element__icone {
+    width: 80px;
+    margin-right: 5px;
+}
