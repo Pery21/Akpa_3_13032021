@@ -1,8 +1,73 @@
 body {
     font-family: 'roboto', sans-serif;
-    max-width: 1000px;
+    max-width: 1440px;
     margin: auto;
 }
+@keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 
+.loader {
+width: 100%;
+margin: 0 auto;
+position: fixed;
+height: 100%;
+left: 0;
+top: 0;
+background-color: rgba(255, 255, 255, 0.90);
+animation: loader 0.05s;
+animation-delay: 1s;
+animation-fill-mode: both;
+z-index: 10000;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#loader-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+#loader-1:before, #loader-1:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 10px solid transparent;
+    border-top-color: #9356dc;
+  }
+  
+  #loader-1:before{
+    z-index: 100;
+    animation: spin 1s infinite;
+  }
+  
+  #loader-1:after{
+    border: 10px solid #ccc;
+  }
+  
+  @keyframes spin{
+    0%{
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100%{
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 .header {
     display: flex;
     flex-flow: column wrap;
@@ -26,6 +91,22 @@ body {
 }
 .icon-located__ville {
     margin-left: 50px
+}
+
+@media screen (min-width:425px and max-width:768px){
+    body {
+        font-family: 'roboto', sans-serif;
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+@media screen (min-width:769px and max-width:1440px){
+    body {
+        font-family: 'roboto', sans-serif;
+        max-width: 1440px;
+        margin: auto;
+    }
 }
 .container {
     width:100%;
@@ -81,8 +162,6 @@ a:link {text-decoration: none;}
     position: relative;
     font-size: 40px;
     height: 100px;
-}
-.choix-list__title {
 }
 .choix-list__icon {
     margin-left: 100px;
@@ -149,6 +228,11 @@ a:link {text-decoration: none;}
     margin: 0 0 5px;
 }
 .suite-text {margin:0;}
+.fa-heart:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+}
 .carte-title__logolike {
     height: 77px;
     width: 80px;
@@ -160,7 +244,7 @@ a:link {text-decoration: none;}
     justify-content: center;
     cursor: pointer;
     position: relative;
-    background-color: #000;
+    background-color: black;
 }
 .carte-title__logolike:before {
     position: absolute;
@@ -170,15 +254,18 @@ a:link {text-decoration: none;}
     width: 100%;
 }
 .like {
-    background-color: #f6f6f6;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     mix-blend-mode: lighten;
 }
-.logo-like {
-    background-color: #fff!important;
+.like .logo-like__1 {opacity: 0;}
+
+@media screen (min-width:320px and max-width:768px){
+    
 }
+
 .footer {
     display: block;
     background-color: #353535;

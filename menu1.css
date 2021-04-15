@@ -59,8 +59,69 @@ body {
     font-family: Shrikhand,"cursive";
     font-size: 80px;
 }
-.sous-menus {
-    display: grid;
+@keyframes itemAppear {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+.menuItem {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear 6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transition-duration: 50s;
+    max-width: 100%;
+}
+.delay-0 {animation-delay: 1s;}
+.delay-1 {animation-delay: 2s;}
+.delay-2 {animation-delay: 3s;}
+.delay-3 {animation-delay: 4s;}
+.delay-4 {animation-delay: 5s;}
+.delay-5 {animation-delay: 6s;}
+.delay-6 {animation-delay: 7s;}
+.delay-7 {animation-delay: 8s;}
+.delay-8 {animation-delay: 9s;}
+
+.fa-heart:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+}
+.menu__button {
+    background-color: transparent;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+}
+.menu__button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.like {
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+    font-size: 80px;
 }
 .sous-menu {
     max-width: 100%;
