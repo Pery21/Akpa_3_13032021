@@ -79,7 +79,7 @@ body {
     animation: itemAppear 6s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
-    transition-duration: 50s;
+    transition-duration: 5s;
     max-width: 100%;
 }
 .delay-0 {animation-delay: 1s;}
