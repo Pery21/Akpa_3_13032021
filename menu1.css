@@ -95,7 +95,8 @@ body {
 .fa-heart:hover{
     cursor: pointer;
     font-weight: bold;
-    color: red;
+    color: #9356DC;
+    transition-duration: 3s;
 }
 .menu__button {
     background-color: transparent;

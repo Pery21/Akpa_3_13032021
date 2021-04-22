@@ -4,12 +4,6 @@ body {
   margin: auto;
 }
 
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 .loader {
   width: 100%;
   margin: 0 auto;
@@ -56,20 +50,6 @@ body {
   border: 10px solid #ccc;
 }
 
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 .header {
   display: flex;
   flex-flow: column wrap;
@@ -104,6 +84,60 @@ body {
   margin-left: 50px;
 }
 
+.footer {
+  display: block;
+  background-color: #353535;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+.container__logo {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 40px;
+  margin: 0 0 16px;
+}
+
+.container__element {
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.element__icone {
+  width: 80px;
+  margin-right: 5px;
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .container {
   width: 100%;
   display: block;
@@ -207,7 +241,7 @@ a:link {
 }
 
 .nouveau {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1b6150;
   padding: 8px;
   border-radius: 2px;
@@ -252,7 +286,8 @@ a:link {
 .fa-heart:hover {
   cursor: pointer;
   font-weight: bold;
-  color: red;
+  color: #9356dc;
+  transition-duration: 3s;
 }
 
 .carte-title__logolike {
@@ -287,40 +322,6 @@ a:link {
 
 .like .logo-like__1 {
   opacity: 0;
-}
-
-.footer {
-  display: block;
-  background-color: #353535;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
-}
-
-.container__logo {
-  color: #fff;
-  font-family: Shrikhand, "cursive";
-  font-size: 40px;
-  margin: 0 0 16px;
-}
-
-.container__element {
-  color: #fff;
-  text-decoration: none;
-  font-size: 40px;
-  margin-top: 30px;
-  font-weight: bold;
-}
-
-.element__icone {
-  width: 80px;
-  margin-right: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
