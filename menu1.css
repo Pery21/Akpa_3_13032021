@@ -82,15 +82,6 @@ body {
     transition-duration: 5s;
     max-width: 100%;
 }
-.delay-0 {animation-delay: 1s;}
-.delay-1 {animation-delay: 2s;}
-.delay-2 {animation-delay: 3s;}
-.delay-3 {animation-delay: 4s;}
-.delay-4 {animation-delay: 5s;}
-.delay-5 {animation-delay: 6s;}
-.delay-6 {animation-delay: 7s;}
-.delay-7 {animation-delay: 8s;}
-.delay-8 {animation-delay: 9s;}
 
 .fa-heart:hover{
     cursor: pointer;
